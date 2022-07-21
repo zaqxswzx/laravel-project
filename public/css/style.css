@@ -1,0 +1,96 @@
+
+
+/* nav */
+nav {
+    text-align: center;
+    margin: 20px auto;
+}
+nav a {
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 3px 5px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+nav a:hover {
+    background-color: #02CB9E;
+}
+
+/* homepage */
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-quantity {
+    width: 40px;
+}
+.homepage table {
+    text-align: center;
+}
+/* signup */
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form form {
+    text-align: center;
+}
+.signup-form input {
+    margin-top: 5px;
+}
+/* register */
+.registered h2 {
+    text-align: center;
+}
+/* login */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* admin products index */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info table {
+    text-align: center;
+}
+.info thead tr:first-child:hover {
+    background-color: #fff;
+}
+.info tr:hover {
+    background-color: #E4EDCC;
+}
+.info td {
+    padding: 5px;
+}
+.increase {
+    margin: 30px auto 0;
+    width: 200px;
+    text-align: center;
+}
+.increase input {
+    margin-top: 5px;
+}
+.delete-form {
+    margin: 0;
+}
+.panel {
+    text-align: center;
+    margin: 30px auto 0;
+    display: none;
+    width: 200px;
+}
+.panel h2 {
+    margin-bottom: 5px;
+}
+.panel input {
+    margin-top: 5px;
+}
+
