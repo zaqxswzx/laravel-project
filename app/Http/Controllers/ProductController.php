@@ -16,14 +16,12 @@ class ProductController extends Controller
     public function index()
     {
         $data = Product::all();
-        // dd(json_decode(Redis::get('products')));
         return view('web.index', [
             'products' => $data
         ]);
     }
     public function checkProduct(Request $request)
     {
-        // dd('ok');
         $id = $request->all()['id'];
         $product = Product::find($id);
         if ($product->quantity > 0) {

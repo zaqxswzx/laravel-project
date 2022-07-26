@@ -18,7 +18,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $productCount = Product::count(); // 總共有幾筆
-        $dataPerPage = 2; // 每一頁的資料有幾筆
+        $dataPerPage = 5; // 每一頁的資料有幾筆
         $productPages = ceil($productCount / $dataPerPage); // 總頁數
         $currentPage = isset($request->all()['page']) ? $request->all()['page'] : 1; // 目前頁數
         $products = Product::orderBy('id', 'desc')

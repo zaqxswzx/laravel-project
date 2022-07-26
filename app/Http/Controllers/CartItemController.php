@@ -43,12 +43,13 @@ class CartItemController extends Controller
      */
     public function store(AddCartItem $addCartItem)
     {
+        $user = auth()->user();
+        $cart = $user->carts()->where('checkouted', false)->with('cartItems')->first();
         $item = $addCartItem->validated();
         $product = Product::find($item['product_id']);
         if ($product->quantity < $item['quantity']){
             return response($product->title.'數量不足',400);
         }
-        $cart = Cart::find($item['cart_id']);
         $result = $cart->cartItems()->create([
             'quantity' => $item['quantity'],
             'product_id' => $product->id,

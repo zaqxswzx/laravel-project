@@ -24,7 +24,7 @@ class AddCartItem extends APIRequest
     public function rules()
     {
         return [
-            'cart_id' => 'required|integer',
+            // 'cart_id' => 'required|integer',
             'product_id' => 'required|integer',
             'quantity' => 'required|integer',
         ];

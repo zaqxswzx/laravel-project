@@ -34,6 +34,7 @@
             @endforeach
         </tbody>
     </table>
+    
 </div>
 <script>
     $('.plus-quantity').click(function(){

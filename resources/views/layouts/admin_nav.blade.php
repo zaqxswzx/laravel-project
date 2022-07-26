@@ -1,3 +1,3 @@
-<nav>
-    <a href="/admin/products">產品列表</a>
+<nav class="admin-nav">
+    <h1>Admin</h1>
 </nav>

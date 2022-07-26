@@ -5,7 +5,7 @@
     </head>
     <body>
         @include('layouts.admin_nav')
-        <div>
+        <div class="container">
             @yield('content')
         </div>
     </body>

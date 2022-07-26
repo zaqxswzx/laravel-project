@@ -1,4 +1,6 @@
-
+body {
+    margin: 0;
+}
 
 /* nav */
 nav {
@@ -17,7 +19,15 @@ nav a {
 nav a:hover {
     background-color: #02CB9E;
 }
-
+/* admin nav */
+.admin-nav {
+    background-color: #F59A25;
+    margin: 0;
+}
+.admin-nav h1 {
+    font-size: 45px;
+    margin: 0;
+}
 /* homepage */
 .homepage {
     display: flex;
@@ -53,13 +63,18 @@ nav a:hover {
     align-items: center;
 }
 /* admin products index */
-.info {
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+}
+.info {
+    margin-top: 200px;
 }
 .info table {
     text-align: center;
+}
+.info thead {
+    border-bottom: 1px solid #000;
 }
 .info thead tr:first-child:hover {
     background-color: #fff;
@@ -70,8 +85,24 @@ nav a:hover {
 .info td {
     padding: 5px;
 }
+.page {
+    margin-top: 20px;
+    text-align: center;
+}
+.page a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+}
+.page a:hover {
+    color: #F59A25;
+}
+.modify {
+    margin-top: 200px;
+}
 .increase {
-    margin: 30px auto 0;
     width: 200px;
     text-align: center;
 }
