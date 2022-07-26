@@ -65,9 +65,10 @@ nav a:hover {
 /* admin products index */
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
-.info {
+.product-info {
+    margin-right: 30px;
     margin-top: 200px;
 }
 .info table {
